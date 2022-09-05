@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_gerador.css" />
+    <title>Gerador de senhas</title>
+  </head>
+  <body>
+    <header>
+        <h1> * Gerador de Senhas * </h1>
+    </header>
+    <article>
+        <div id="caixa">
+            <ul>
+                <ol><input type="text" id="senha"></ol>
+                <ol><label for="qtd_caractere">Quantidade de Caracteres</label><input type="number" id="qtd_caractere" value="5" min="5" max="10"></ol>
+                <ol><label for="letra_maiuscula">Inserir - Letras Maiusculas </label><input type="checkbox" id="letra_maiuscula" checked></ol>
+                <ol><label for="letra_minuscula">Inserir - Letras Minusculas </label><input type="checkbox" id="letra_minuscula" checked></ol>
+                <ol><label for="especial">Inserir - Caracteres Especias </label><input type="checkbox" id="especial" checked></ol>
+                <ol><input type="button" id="botao" value="GERAR" onclick="geraSenha()"></ol>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <p>Desenvolido por</p>
+    </footer>
+
+  </body>
+  <script src="script_gerador.js"></script>
+</html>
